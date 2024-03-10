@@ -11,7 +11,7 @@ public class Login extends JFrame {
     Login(){
 
         super("Logic");
-        getContentPane().setBackground(new Color(255, 105, 86));
+        getContentPane().setBackground(Color.lightGray);
         JLabel username = new JLabel("UserName");
         username.setBounds(300,60,100,20);
         add(username);
