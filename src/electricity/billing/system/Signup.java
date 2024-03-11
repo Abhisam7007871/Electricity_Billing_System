@@ -2,19 +2,23 @@ package electricity.billing.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
-public class Signup extends JFrame {
+public class Signup extends JFrame implements ActionListener {
 
 
     Choice loginAsCho;
     TextField meterText, EmployerText, userNameText, nameText, passwordText;
 
+    JButton create, back;
 
     Signup() {
 
         super("Signup Page");
+        getContentPane().setBackground(new Color(91, 163, 158));
 
         JLabel createAs = new JLabel("Create Account AS");
         createAs.setBounds(30,50,125,20);
@@ -75,9 +79,43 @@ public class Signup extends JFrame {
         loginAsCho.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-
+                String user = loginAsCho.getSelectedItem();
+                if(user.equals("Customer")){
+                    Employer.setVisible(false);
+                    EmployerText.setVisible(false);
+                    meterNo.setVisible(true);
+                    meterText.setVisible(true);
+                }else{
+                    Employer.setVisible(true);
+                    EmployerText.setVisible(true);
+                    meterNo.setVisible(false);
+                    meterText.setVisible(false);
+                }
+                
             }
         });
+
+
+        create = new JButton("Create");
+        create.setBackground(new Color(79, 123, 183));
+        create.setForeground(Color.black);
+        create.setBounds(50,270,100,25);
+        add(create);
+
+        back = new JButton("Back");
+        back.setBackground(new Color(79, 123, 183));
+        back.setForeground(Color.black);
+        back.setBounds(170,270,100,25);
+        add(back);
+
+
+        ImageIcon boyIcon = new ImageIcon(ClassLoader.getSystemResource("icons/boy.png"));
+        Image boyImg = boyIcon.getImage().getScaledInstance(250,250,Image.SCALE_DEFAULT);
+        ImageIcon boyIcon2 = new ImageIcon(boyImg);
+        JLabel boyLabel = new JLabel(boyIcon2);
+        boyLabel.setBounds(330,40,250,250);
+        add(boyLabel);
+
 
 
 
@@ -85,6 +123,11 @@ public class Signup extends JFrame {
         setLocation(500,200);
         setLayout(null);
         setVisible(true);
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
     }
 

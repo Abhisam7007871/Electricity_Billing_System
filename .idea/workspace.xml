@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[Signup Page Added]">
+      <change afterPath="$PROJECT_DIR$/src/icons/boy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +37,12 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/Projects/Java/Electricity Billing System/src/icons/icon"
+    "last_opened_file_path": "F:/Projects/Java/Electricity Billing System/src/icons"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projects\Java\Electricity Billing System\src\icons" />
       <recent name="F:\Projects\Java\Electricity Billing System\src\icons\icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -153,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710152259840</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FEATURE ADDED[Signup Page Added]">
+      <created>1710152775801</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710152775801</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
