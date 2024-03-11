@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[Signup Page Added]">
+    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[Signup Page Completed]">
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
       <recent name="F:\Projects\Java\Electricity Billing System\src\icons\splash" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Login">
+  <component name="RunManager" selected="Application.Signup">
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="electricity.billing.system.Login" />
       <module name="Electricity Billing System" />
@@ -92,9 +92,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Login" />
         <item itemvalue="Application.Signup" />
         <item itemvalue="Application.Splash" />
+        <item itemvalue="Application.Login" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710154504807</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="FEATURE ADDED[Signup Page Completed]">
+      <created>1710155184275</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710155184275</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +197,7 @@
     <MESSAGE value="FEATURE ADDED[Login/Splash]" />
     <MESSAGE value="FEATURE ADDED[Login Page]" />
     <MESSAGE value="FEATURE ADDED[Signup Page Added]" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[Signup Page Added]" />
+    <MESSAGE value="FEATURE ADDED[Signup Page Completed]" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[Signup Page Completed]" />
   </component>
 </project>
