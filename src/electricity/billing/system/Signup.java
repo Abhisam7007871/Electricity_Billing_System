@@ -2,11 +2,16 @@ package electricity.billing.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
 public class Signup extends JFrame {
 
+
     Choice loginAsCho;
-    TextField meterText, EmployerText, userNameText;
+    TextField meterText, EmployerText, userNameText, nameText, passwordText;
+
+
     Signup() {
 
         super("Signup Page");
@@ -48,6 +53,31 @@ public class Signup extends JFrame {
         userNameText = new TextField();
         userNameText.setBounds(170,140,125,20);
         add(userNameText);
+
+        JLabel name = new JLabel("Name");
+        name.setBounds(30,180,125,20);
+        add(name);
+
+        nameText = new TextField();
+        nameText.setBounds(170,180,125,20);
+        add(nameText);
+
+        JLabel password = new JLabel("Password");
+        password.setBounds(30,220,125,20);
+        add(password);
+
+        passwordText = new TextField();
+        passwordText.setBounds(170,220,125,20);
+        add(passwordText);
+
+
+
+        loginAsCho.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+
+            }
+        });
 
 
 
