@@ -100,12 +100,14 @@ public class Signup extends JFrame implements ActionListener {
         create.setBackground(new Color(79, 123, 183));
         create.setForeground(Color.black);
         create.setBounds(50,270,100,25);
+        create.addActionListener(this);
         add(create);
 
         back = new JButton("Back");
         back.setBackground(new Color(79, 123, 183));
         back.setForeground(Color.black);
         back.setBounds(170,270,100,25);
+        back.addActionListener(this);
         add(back);
 
 
@@ -128,7 +130,16 @@ public class Signup extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==create){
 
+
+            // write code here
+
+
+        } else if (e.getSource()==back) {
+            setVisible(false);
+            new Login();
+        }
     }
 
     public static void main(String[] args) {
