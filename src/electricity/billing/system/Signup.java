@@ -140,7 +140,7 @@ public class Signup extends JFrame implements ActionListener {
             try{
                 database c = new database();
                 String query = null;
-                query = "insert into Signup value('"+smeter+"','"+susername+"','"+spassword+"','"+sloginAs+"')";
+                query = "insert into Signup value('"+smeter+"','"+susername+"','"+sname+"','"+spassword+"','"+sloginAs+"')";
                 c.statement.execute(query);
 
             }catch (Exception E){
