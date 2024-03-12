@@ -11,7 +11,9 @@ public class database {
     database(){
         try {
 
-            Class.forName("com.mysql.jdbc.Driver");
+
+
+            //Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bill_System","root","Rupal91#");
             statement = connection.createStatement();
         }catch (Exception e){

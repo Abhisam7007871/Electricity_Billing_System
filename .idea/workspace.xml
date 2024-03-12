@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[Mysql Page Added]">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/bin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Electricity Billing System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Electricity Billing System.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +41,12 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/Projects/Java/Electricity Billing System/src/icons"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "F:/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -184,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710160545641</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="FEATURE ADDED[Mysql Page Added]">
+      <created>1710261758974</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710261758974</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,5 +223,9 @@
     <MESSAGE value="FEATURE ADDED[Signup Page Completed]" />
     <MESSAGE value="FEATURE ADDED[Mysql Page Added]" />
     <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[Mysql Page Added]" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
