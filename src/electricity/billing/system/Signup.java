@@ -1,5 +1,7 @@
 package electricity.billing.system;
 
+import com.mysql.cj.log.Log;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -141,7 +143,12 @@ public class Signup extends JFrame implements ActionListener {
                 database c = new database();
                 String query = null;
                 query = "insert into Signup value('"+smeter+"','"+susername+"','"+sname+"','"+spassword+"','"+sloginAs+"')";
+
                 c.statement.execute(query);
+
+                JOptionPane.showMessageDialog(null,"Account Created");
+                setVisible(false);
+                new Login();
 
             }catch (Exception E){
                 E.printStackTrace();
