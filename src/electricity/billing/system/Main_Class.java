@@ -80,6 +80,59 @@ public class Main_Class extends JFrame {
         paybill.setIcon(new ImageIcon(paybillImage));
         user.add(paybill);
 
+        JMenuItem billdetails = new JMenuItem("Bill Details");
+        billdetails.setFont(new Font("monospaced",Font.PLAIN,14));
+        ImageIcon billdetailsImg = new ImageIcon(ClassLoader.getSystemResource("icons/details.png"));
+        Image billdetailsImage = billdetailsImg.getImage().getScaledInstance(20,20,Image.SCALE_DEFAULT);
+        billdetails.setIcon(new ImageIcon(billdetailsImage));
+        user.add(billdetails);
+
+
+
+        JMenu bill = new JMenu("Bill");
+        bill.setFont(new Font("serif",Font.PLAIN,15));
+        menuBar.add(bill);
+
+        JMenuItem genBill = new JMenuItem("Generate Bill");
+        genBill.setFont(new Font("monospaced",Font.PLAIN,14));
+        ImageIcon genBillImg = new ImageIcon(ClassLoader.getSystemResource("icons/bill.png"));
+        Image genBillImage = genBillImg.getImage().getScaledInstance(20,20,Image.SCALE_DEFAULT);
+        genBill.setIcon(new ImageIcon(genBillImage));
+        bill.add(genBill);
+
+        JMenu utility = new JMenu("Utility");
+        utility.setFont(new Font("serif",Font.PLAIN,15));
+        menuBar.add(utility);
+
+        JMenuItem notepad = new JMenuItem("Notepad");
+        notepad.setFont(new Font("monospaced",Font.PLAIN,14));
+        ImageIcon notepadImg = new ImageIcon(ClassLoader.getSystemResource("icons/notepad.png"));
+        Image notepadImage = notepadImg.getImage().getScaledInstance(20,20,Image.SCALE_DEFAULT);
+        notepad.setIcon(new ImageIcon(notepadImage));
+        utility.add(notepad);
+
+        JMenuItem calculator = new JMenuItem("Calculator");
+        calculator.setFont(new Font("monospaced",Font.PLAIN,14));
+        ImageIcon calculatorImg = new ImageIcon(ClassLoader.getSystemResource("icons/calculator.png"));
+        Image calculatorImage = calculatorImg.getImage().getScaledInstance(20,20,Image.SCALE_DEFAULT);
+        calculator.setIcon(new ImageIcon(calculatorImage));
+        //calculator.setBackground(Color.green);
+        utility.add(calculator);
+
+        JMenu exit = new JMenu("Exit");
+        exit.setFont(new Font("serif",Font.PLAIN,15));
+        menuBar.add(exit);
+
+        JMenuItem eexit = new JMenuItem("Exit");
+        eexit.setFont(new Font("monospaced",Font.PLAIN,14));
+        ImageIcon eexitImg = new ImageIcon(ClassLoader.getSystemResource("icons/exit.png"));
+        Image eexitImage = eexitImg.getImage().getScaledInstance(20,20,Image.SCALE_DEFAULT);
+        eexit.setIcon(new ImageIcon(eexitImage));
+        //calculator.setBackground(Color.green);
+        exit.add(eexit);
+
+
+
 
         setLayout(new FlowLayout());
 

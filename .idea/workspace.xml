@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Main_Class Created]">
+    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,9 +114,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main_Class" />
-        <item itemvalue="Application.Signup" />
-        <item itemvalue="Application.Splash" />
         <item itemvalue="Application.Login" />
+        <item itemvalue="Application.Splash" />
+        <item itemvalue="Application.Signup" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710348847900</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER]">
+      <created>1710350123081</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710350123081</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +265,8 @@
     <MESSAGE value="FEATURE ADDED[Mysql Page Added]" />
     <MESSAGE value="FEATURE ADDED[Mysql Page Completed]" />
     <MESSAGE value="FEATURE ADDED[ Main_Class Created]" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ Main_Class Created]" />
+    <MESSAGE value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER]" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
