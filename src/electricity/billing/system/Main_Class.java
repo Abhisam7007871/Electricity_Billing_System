@@ -28,6 +28,7 @@ public class Main_Class extends JFrame {
         newcustomer.setIcon(new ImageIcon(customerImage));
         menu.add(newcustomer);
 
+
         JMenuItem customerDetails = new JMenuItem("Customer Details");
         customerDetails.setFont(new Font("monospaced",Font.PLAIN,14));
         ImageIcon customerDetailsImg = new ImageIcon(ClassLoader.getSystemResource("icons/customerDetails.png"));
