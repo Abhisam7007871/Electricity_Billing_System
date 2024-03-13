@@ -5,28 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Main_Class Created]">
-      <change afterPath="$PROJECT_DIR$/src/icons/Splash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/bill.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/boy (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/budget.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/calculator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/calculatorbills.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/customerDetails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/depositdetails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/detail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/details.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/ebs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/information.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/newcustomer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/notepad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/pay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/refresh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/sign-up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/update.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/viewInfo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" afterDir="false" />
     </list>
@@ -248,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710346900599</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="FEATURE ADDED[ Main_Class Created]">
+      <created>1710348847900</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710348847900</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
