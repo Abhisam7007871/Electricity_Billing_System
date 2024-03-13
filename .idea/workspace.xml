@@ -4,8 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[Mysql Page Completed]">
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" afterDir="false" />
+    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Main_Class Created]">
+      <change afterPath="$PROJECT_DIR$/src/icons/Splash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/bill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/boy (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/budget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/calculator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/calculatorbills.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/customerDetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/depositdetails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/detail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/ebs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/information.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/newcustomer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/notepad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/pay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/sign-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/update.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/viewInfo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +79,22 @@
       <recent name="F:\Projects\Java\Electricity Billing System\src\icons\splash" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Signup">
+  <component name="RunManager" selected="Application.Main_Class">
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="electricity.billing.system.Login" />
+      <module name="Electricity Billing System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="electricity.billing.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_Class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="electricity.billing.system.Main_Class" />
       <module name="Electricity Billing System" />
       <extension name="coverage">
         <pattern>
@@ -98,6 +134,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main_Class" />
         <item itemvalue="Application.Signup" />
         <item itemvalue="Application.Splash" />
         <item itemvalue="Application.Login" />
@@ -204,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710346665746</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="FEATURE ADDED[ Main_Class Created]">
+      <created>1710346900599</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1710346900599</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,7 +271,8 @@
     <MESSAGE value="FEATURE ADDED[Signup Page Completed]" />
     <MESSAGE value="FEATURE ADDED[Mysql Page Added]" />
     <MESSAGE value="FEATURE ADDED[Mysql Page Completed]" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[Mysql Page Completed]" />
+    <MESSAGE value="FEATURE ADDED[ Main_Class Created]" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ Main_Class Created]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
