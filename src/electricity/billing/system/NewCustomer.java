@@ -13,6 +13,9 @@ public class NewCustomer extends JFrame {
     NewCustomer(){
 
         super("New Customer");
+        setSize(700,500);
+        setLocation(400,200);
+
 
         JPanel panel = new JPanel();
         panel.setLayout(null);
@@ -98,9 +101,15 @@ public class NewCustomer extends JFrame {
 
 
 
+        setLayout(new BorderLayout());
+        add(panel,"Center");
 
-        setSize(700,500);
-        setLocation(400,200);
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/boy.png"));
+        Image i2 = i1.getImage().getScaledInstance(230,200,Image.SCALE_DEFAULT);
+        ImageIcon i3 = new ImageIcon(i2);
+        JLabel imgLabel = new JLabel(i3);
+        add(imgLabel,"West");
+
         setVisible(true);
     }
 

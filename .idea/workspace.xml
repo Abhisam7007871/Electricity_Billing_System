@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER&lt;Bill&lt;Utility&lt;Exit]">
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/NewCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ NewCustomer Class Added ]">
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/NewCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/NewCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710352036452</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="FEATURE ADDED[ NewCustomer Class Added ]">
+      <created>1710411924394</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710411924394</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,7 +300,8 @@
     <MESSAGE value="FEATURE ADDED[ Main_Class Created]" />
     <MESSAGE value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER]" />
     <MESSAGE value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER&lt;Bill&lt;Utility&lt;Exit]" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER&lt;Bill&lt;Utility&lt;Exit]" />
+    <MESSAGE value="FEATURE ADDED[ NewCustomer Class Added ]" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ NewCustomer Class Added ]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
