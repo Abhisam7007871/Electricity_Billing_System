@@ -121,7 +121,7 @@ public class NewCustomer extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==next){
             String sname = nameText.getText();
-            String smeter = meterNum.getText();
+            String smeter = meterText.getText();
             String saddress = address.getText();
             String scity = city.getText();
             String sstate = state.getText();
@@ -129,6 +129,24 @@ public class NewCustomer extends JFrame implements ActionListener {
             String sphone = phone.getText();
 
             String query_customer = "insert into New_Customer values('"+sname+"','"+smeter+"','"+saddress+"','"+scity+"','"+sstate+"','"+eemail+"','"+sphone+"')";
+
+            String query_signup = "insert into Signup values('"+smeter+"','','"+sname+"','','')";
+
+            try{
+                database c = new database();
+                c.statement.execute(query_customer);
+                c.statement.executeUpdate(query_signup);
+
+                JOptionPane.showMessageDialog(null,"Customer deatials added successfully.");
+                setVisible(false);
+                new MeterInfo(smeter);
+
+
+            }catch (Exception E){
+                E.printStackTrace();
+            }
+        }else{
+            setVisible(false);
         }
     }
 

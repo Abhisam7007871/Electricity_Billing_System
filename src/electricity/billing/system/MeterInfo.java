@@ -2,14 +2,19 @@ package electricity.billing.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class MeterInfo extends JFrame {
+public class MeterInfo extends JFrame implements ActionListener {
+
 
 
     Choice meterLocCho, meterTypCho, phaseCodeCho, buildTypCho;
 
     JButton submit ;
-    MeterInfo(){
+    String meternumber;
+    MeterInfo(String meternumber){
+        this.meternumber = meternumber;
         JPanel panel = new JPanel();
         panel.setLayout(null);
         panel.setBackground(new Color(252,186,3));
@@ -24,7 +29,7 @@ public class MeterInfo extends JFrame {
         meterNumber.setBounds(50,80,100,20);
         panel.add(meterNumber);
 
-        JLabel meterNumText = new JLabel();
+        JLabel meterNumText = new JLabel(meternumber);
         meterNumText.setBounds(180,80,150,20);
         panel.add(meterNumText);
 
@@ -92,6 +97,7 @@ public class MeterInfo extends JFrame {
         submit.setBounds(150,390,100,25);
         submit.setBackground(Color.BLACK);
         submit.setForeground(Color.white);
+        submit.addActionListener(this);
         panel.add(submit);
 
         setLayout(new BorderLayout());
@@ -110,7 +116,33 @@ public class MeterInfo extends JFrame {
         setVisible(true);
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==submit){
+            String smeterNum = meternumber;
+            String smeterLoc = meterLocCho.getSelectedItem();
+            String smeterTyp = meterTypCho.getSelectedItem();
+            String sphaseCode = phaseCodeCho.getSelectedItem();
+            String sbillTyp = buildTypCho.getSelectedItem();
+            String sday = "30";
+
+            String query_meterInfo = "insert into Meter_Info values('"+smeterNum+"','"+smeterLoc+"','"+smeterTyp+"','"+sphaseCode+"','"+sbillTyp+"','"+sday+"')";
+            try{
+                database c = new database();
+                c.statement.executeUpdate(query_meterInfo);
+
+                JOptionPane.showMessageDialog(null,"Meter information submitted successfully.");
+                setVisible(false);
+            }catch (Exception E){
+                E.printStackTrace();
+            }
+
+        }else{
+            setVisible(false);
+        }
+    }
+
     public static void main(String[] args) {
-        new MeterInfo();
+        new MeterInfo("");
     }
 }
