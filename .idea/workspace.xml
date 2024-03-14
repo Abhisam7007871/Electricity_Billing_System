@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER]">
+    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER&lt;Bill&lt;Utility&lt;Exit]">
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/NewCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Main_Class.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <recent name="F:\Projects\Java\Electricity Billing System\src\icons\splash" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main_Class">
+  <component name="RunManager" selected="Application.NewCustomer">
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="electricity.billing.system.Login" />
       <module name="Electricity Billing System" />
@@ -74,6 +73,19 @@
     </configuration>
     <configuration name="Main_Class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="electricity.billing.system.Main_Class" />
+      <module name="Electricity Billing System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="electricity.billing.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="electricity.billing.system.NewCustomer" />
       <module name="Electricity Billing System" />
       <extension name="coverage">
         <pattern>
@@ -113,6 +125,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NewCustomer" />
         <item itemvalue="Application.Main_Class" />
         <item itemvalue="Application.Login" />
         <item itemvalue="Application.Splash" />
@@ -241,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710350123081</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER&lt;Bill&lt;Utility&lt;Exit]">
+      <created>1710351910631</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1710351910631</updated>
+    </task>
+    <task id="LOCAL-00018" summary="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER&lt;Bill&lt;Utility&lt;Exit]">
+      <created>1710352036452</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710352036452</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +293,8 @@
     <MESSAGE value="FEATURE ADDED[Mysql Page Completed]" />
     <MESSAGE value="FEATURE ADDED[ Main_Class Created]" />
     <MESSAGE value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER]" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER]" />
+    <MESSAGE value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER&lt;Bill&lt;Utility&lt;Exit]" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ Main_Class ADDED- MENU&lt;INFORMATION&lt;USER&lt;Bill&lt;Utility&lt;Exit]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
