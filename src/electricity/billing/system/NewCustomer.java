@@ -2,12 +2,14 @@ package electricity.billing.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Random;
 
-public class NewCustomer extends JFrame {
+public class NewCustomer extends JFrame implements ActionListener {
 
-    JLabel heading, customerName,meterNum, address,city, state, email, phone ;
-    TextField nameText, meterText, addressText, cityText, stateText, emailText, phoneText ;
+    JLabel heading,meterText, customerName,meterNum, address,city, state, email, phone ;
+    TextField nameText, addressText, cityText, stateText, emailText, phoneText ;
 
     JButton next, cancel;
     NewCustomer(){
@@ -35,11 +37,11 @@ public class NewCustomer extends JFrame {
         nameText.setBounds(180,80,150,20);
         panel.add(nameText);
 
-        meterNum = new JLabel("Meter Nubmer");
+        meterNum = new JLabel("Meter Number");
         meterNum.setBounds(50,120,100,20);
         panel.add(meterNum);
 
-        meterText = new TextField("");
+        meterText = new JLabel("");
         meterText.setBounds(180,120,150,20);
         panel.add(meterText);
 
@@ -91,12 +93,14 @@ public class NewCustomer extends JFrame {
         next.setBounds(70,390,100,25);
         next.setBackground(Color.BLACK);
         next.setForeground(Color.white);
+        next.addActionListener(this);
         panel.add(next);
 
         cancel = new JButton("Cancel");
         cancel.setBounds(210,390,100,25);
         cancel.setBackground(Color.BLACK);
         cancel.setForeground(Color.white);
+        cancel.addActionListener(this);
         panel.add(cancel);
 
 
@@ -111,6 +115,21 @@ public class NewCustomer extends JFrame {
         add(imgLabel,"West");
 
         setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==next){
+            String sname = nameText.getText();
+            String smeter = meterNum.getText();
+            String saddress = address.getText();
+            String scity = city.getText();
+            String sstate = state.getText();
+            String eemail = email.getText();
+            String sphone = phone.getText();
+
+            String query_customer = "insert into New_Customer values('"+sname+"','"+smeter+"','"+saddress+"','"+scity+"','"+sstate+"','"+eemail+"','"+sphone+"')";
+        }
     }
 
     public static void main(String[] args) {
