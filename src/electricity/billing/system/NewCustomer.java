@@ -122,13 +122,13 @@ public class NewCustomer extends JFrame implements ActionListener {
         if(e.getSource()==next){
             String sname = nameText.getText();
             String smeter = meterText.getText();
-            String saddress = address.getText();
-            String scity = city.getText();
-            String sstate = state.getText();
-            String eemail = email.getText();
-            String sphone = phone.getText();
+            String saddress = addressText.getText();
+            String scity = cityText.getText();
+            String sstate = stateText.getText();
+            String eemail = emailText.getText();
+            String sphone = phoneText.getText();
 
-            String query_customer = "insert into New_Customer values('"+sname+"','"+smeter+"','"+saddress+"','"+scity+"','"+sstate+"','"+eemail+"','"+sphone+"')";
+            String query_customer = "insert into New_Customer values('"+smeter+"','"+sname+"','"+saddress+"','"+scity+"','"+sstate+"','"+eemail+"','"+sphone+"')";
 
             String query_signup = "insert into Signup values('"+smeter+"','','"+sname+"','','')";
 

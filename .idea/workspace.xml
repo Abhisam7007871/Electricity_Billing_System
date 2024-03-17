@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ MeterInfo&#10; Class Completed ]">
+      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/CalculateBill.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/NewCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/NewCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +58,9 @@
       <recent name="F:\Projects\Java\Electricity Billing System\src\icons\splash" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewCustomer">
-    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="electricity.billing.system.Login" />
+  <component name="RunManager" selected="Application.CalculateBill">
+    <configuration name="CalculateBill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="electricity.billing.system.CalculateBill" />
       <module name="Electricity Billing System" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculateBill" />
         <item itemvalue="Application.NewCustomer" />
         <item itemvalue="Application.Splash" />
         <item itemvalue="Application.Main_Class" />
         <item itemvalue="Application.MeterInfo" />
-        <item itemvalue="Application.Login" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710427661725</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="FEATURE ADDED[ MeterInfo&#10; Class Completed ]">
+      <created>1710687181760</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1710687181761</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
