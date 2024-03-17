@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ MeterInfo&#10; Class Completed ]">
-      <change afterPath="$PROJECT_DIR$/src/electricity/billing/system/CalculateBill.java" afterDir="false" />
+    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ CalculateBill.java&#10; Class ]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/NewCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/NewCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/CalculateBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/CalculateBill.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710687181761</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="FEATURE ADDED[ CalculateBill.java&#10; Class ]">
+      <created>1710689356315</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1710689356315</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,7 +340,8 @@
     <MESSAGE value="FEATURE ADDED[ NewCustomer Class Completed ]" />
     <MESSAGE value="FEATURE ADDED[ MeterInfo&#10; Class Added ]" />
     <MESSAGE value="FEATURE ADDED[ MeterInfo&#10; Class Completed ]" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ MeterInfo&#10; Class Completed ]" />
+    <MESSAGE value="FEATURE ADDED[ CalculateBill.java&#10; Class ]" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ CalculateBill.java&#10; Class ]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

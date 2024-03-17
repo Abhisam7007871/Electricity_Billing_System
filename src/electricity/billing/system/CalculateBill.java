@@ -2,15 +2,20 @@ package electricity.billing.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.sql.ResultSet;
 
-public class CalculateBill extends JFrame {
+public class CalculateBill extends JFrame implements ActionListener {
 
-    JLabel meternum, nameText, addressText ;
+    JLabel meternum, nameText, addressText,unitConsumed, month ;
 
-    Choice meterNumCho ;
+    Choice meterNumCho, monthCho ;
 
-    TextField a ;
+    TextField unitText ;
+    JButton submit, cancel;
     CalculateBill(){
 
         super("Calculate Bill");
@@ -72,19 +77,82 @@ public class CalculateBill extends JFrame {
         }catch (Exception E){
             E.printStackTrace();
         }
+        meterNumCho.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                try{
+                    database c = new database();
+                    ResultSet resultSet = c.statement.executeQuery("select * from New_Customer where meterno = '"+meterNumCho.getSelectedItem()+"'");
 
+                    while(resultSet.next()){
+                        nameText.setText(resultSet.getString("name"));
+                        addressText.setText(resultSet.getString("address"));
+                    }
+                }catch (Exception E){
+                    E.printStackTrace();
+                }
+            }
+        });
 
+        unitConsumed = new JLabel("Unit Consumed");
+        unitConsumed.setBounds(50,200,100,20);
+        panel.add(unitConsumed);
 
+        unitText = new TextField();
+        unitText.setBounds(180,200,150,20);
+        panel.add(unitText);
 
+        JLabel month = new JLabel("Month");
+        month.setBounds(50,240,100,20);
+        panel.add(month);
 
+        monthCho = new Choice();
+        monthCho.add("January");
+        monthCho.add("February");
+        monthCho.add("March");
+        monthCho.add("April");
+        monthCho.add("May");
+        monthCho.add("June");
+        monthCho.add("July");
+        monthCho.add("August");
+        monthCho.add("September");
+        monthCho.add("October");
+        monthCho.add("November");
+        monthCho.add("December");
+        monthCho.setBounds(180,240,150,20);
+        panel.add(monthCho);
 
+        submit = new JButton("Submit");
+        submit.setBounds(80,300,100,25);
+        submit.setBackground(Color.black);
+        submit.setForeground(Color.white);
+        submit.addActionListener(this);
+        panel.add(submit);
 
+        cancel = new JButton("Submit");
+        cancel.setBounds(220,300,100,25);
+        cancel.setBackground(Color.black);
+        cancel.setForeground(Color.white);
+        cancel.addActionListener(this);
+        panel.add(cancel);
 
+        setLayout(new BorderLayout());
+        add(panel,"Center");
+        ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icons/budget.png"));
+        Image image = imageIcon.getImage().getScaledInstance(250,200,Image.SCALE_DEFAULT);
+        ImageIcon imageIcon1 = new ImageIcon(image);
+        JLabel imageLable1 = new JLabel(imageIcon1);
+        add(imageLable1,"East");
 
 
         setSize(650,400);
         setLocation(400,200);
         setVisible(true);
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
     }
 
