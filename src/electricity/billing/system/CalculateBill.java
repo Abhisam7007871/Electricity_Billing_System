@@ -129,7 +129,7 @@ public class CalculateBill extends JFrame implements ActionListener {
         submit.addActionListener(this);
         panel.add(submit);
 
-        cancel = new JButton("Submit");
+        cancel = new JButton("Cancel");
         cancel.setBounds(220,300,100,25);
         cancel.setBackground(Color.black);
         cancel.setForeground(Color.white);
@@ -153,7 +153,51 @@ public class CalculateBill extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==submit){
+            String smeter = meterNumCho.getSelectedItem();
+            String sunit = unitText.getText();
+            String smonth = monthCho.getSelectedItem();
 
+            int totalBill = 0;
+            int unit = Integer.parseInt(sunit);
+            String query_tax = "select * from Tax";
+            try{
+                database c = new database();
+                ResultSet resultSet = c.statement.executeQuery(query_tax);
+                while (resultSet.next()){
+                    totalBill += unit * Integer.parseInt(resultSet.getString("cost_per_Unit"));
+                    totalBill += Integer.parseInt(resultSet.getString("meter_rent"));
+                    totalBill += Integer.parseInt(resultSet.getString("service_charge"));
+                    //totalBill += Integer.parseInt(resultSet.getString("service_tax"));
+                    totalBill += Integer.parseInt(resultSet.getString("swacch_bharat"));
+                    totalBill += Integer.parseInt(resultSet.getString("fixed_tax"));
+
+
+
+
+                }
+            }catch (Exception E){
+                E.printStackTrace();
+            }
+
+            String query_total_bill = "insert into Bill values('"+smeter+"','"+smonth+"','"+unit+"','"+totalBill+"','Not Paid')";
+            try{
+                database c = new database();
+                c.statement.executeUpdate(query_total_bill);
+
+                JOptionPane.showMessageDialog(null,"Customer Bill Updated successfully");
+                setVisible(false);
+
+
+            }catch (Exception E){
+                E.printStackTrace();
+            }
+
+
+        }
+        else{
+            setVisible(false);
+        }
     }
 
     public static void main(String[] args) {
