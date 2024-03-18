@@ -4,14 +4,17 @@ import net.proteanit.sql.DbUtils;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
-public class CustomerDetails extends JFrame {
+public class CustomerDetails extends JFrame implements ActionListener {
 
 
     JLabel searchMeter, searchName ;
     Choice searchMeterCho, searchNameCho ;
     JTable table ;
+    JButton search, print, close ;
     CustomerDetails(){
         super("Customer Details");
         getContentPane().setBackground(new Color(114, 181, 183));
@@ -72,14 +75,51 @@ public class CustomerDetails extends JFrame {
         add(scrollPane);
 
 
+        search = new JButton("Search");
+        search.setBackground(Color.white);
+        search.setBounds(20,70,80,20);
+        search.addActionListener(this);
+        add(search);
+
+        print = new JButton("Print");
+        print.setBackground(Color.white);
+        print.setBounds(120,70,80,20);
+        print.addActionListener(this);
+        add(print);
+
+        close = new JButton("Close");
+        close.setBackground(Color.white);
+        close.setBounds(590,70,80,20);
+        close.addActionListener(this);
+        add(close);
+
+
 
         setVisible(true);
 
+    }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==search){
+            String query_search = "select * from New_Customer where meterno = '"+searchMeterCho.getSelectedItem()+"' and name = '"+searchNameCho.getSelectedItem()+"'";
+            try{
+                database c = new database();
+                ResultSet resultSet = c.statement.executeQuery(query_search);
+                table.setModel(DbUtils.resultSetToTableModel(resultSet));
 
-
-
-
+            }catch (Exception E){
+                E.printStackTrace();
+            }
+        } else if (e.getSource()==print) {
+            try{
+                table.print();
+            }catch (Exception E){
+                E.printStackTrace();
+            }
+        }else{
+            setVisible(false);
+        }
 
     }
 
