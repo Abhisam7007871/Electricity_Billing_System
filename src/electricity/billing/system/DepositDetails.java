@@ -63,6 +63,7 @@ public class DepositDetails extends JFrame implements ActionListener {
 
 
 
+
         table = new JTable();
         try{
             database c = new database();
