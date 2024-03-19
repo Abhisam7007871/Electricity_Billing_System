@@ -113,6 +113,8 @@ public class DepositDetails extends JFrame implements ActionListener {
                 ResultSet resultSet = c.statement.executeQuery(query_search);
                 table.setModel(DbUtils.resultSetToTableModel(resultSet));
 
+
+
             }catch (Exception E){
                 E.printStackTrace();
             }
