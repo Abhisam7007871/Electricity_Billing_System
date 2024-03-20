@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Deposit Details&#10; Class,Filter feature Completed]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <recent name="F:\Projects\Java\Electricity Billing System\src\icons\splash" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DepositDetails">
+  <component name="RunManager" selected="Application.Signup">
     <configuration name="CalculateBill" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="electricity.billing.system.CalculateBill" />
       <module name="Electricity Billing System" />
@@ -108,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Splash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="electricity.billing.system.Splash" />
+    <configuration name="Signup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="electricity.billing.system.Signup" />
       <module name="Electricity Billing System" />
       <extension name="coverage">
         <pattern>
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Signup" />
         <item itemvalue="Application.DepositDetails" />
         <item itemvalue="Application.CalculateBill" />
         <item itemvalue="Application.CustomerDetails" />
         <item itemvalue="Application.NewCustomer" />
-        <item itemvalue="Application.Splash" />
       </list>
     </recent_temporary>
   </component>
@@ -385,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710871598755</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="FEATURE ADDED[ Deposit Details&#10; Class,Filter feature Completed]">
+      <created>1710955369145</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1710955369145</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

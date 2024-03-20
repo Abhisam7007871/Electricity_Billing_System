@@ -4,10 +4,8 @@ import com.mysql.cj.log.Log;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
+import java.awt.event.*;
+import java.sql.ResultSet;
 
 public class Signup extends JFrame implements ActionListener {
 
@@ -60,13 +58,36 @@ public class Signup extends JFrame implements ActionListener {
         userNameText.setBounds(170,140,125,20);
         add(userNameText);
 
+
+
         JLabel name = new JLabel("Name");
         name.setBounds(30,180,125,20);
         add(name);
 
-        nameText = new TextField();
+        nameText = new TextField("");
         nameText.setBounds(170,180,125,20);
         add(nameText);
+
+        meterText.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                try{
+                    database c = new database();
+                    ResultSet resultSet =c.statement.executeQuery("select * from Signup where meter_no = '"+ meterText.getText()+"'");
+                    if(resultSet.next()){
+                        nameText.setText(resultSet.getString("name"));
+                    }
+
+                }catch (Exception E){
+                    E.printStackTrace();
+                }
+            }
+        });
 
         JLabel password = new JLabel("Password");
         password.setBounds(30,220,125,20);
@@ -84,6 +105,7 @@ public class Signup extends JFrame implements ActionListener {
                 String user = loginAsCho.getSelectedItem();
                 if(user.equals("Customer")){
                     Employer.setVisible(false);
+                    nameText.setEditable(false);
                     EmployerText.setVisible(false);
                     meterNo.setVisible(true);
                     meterText.setVisible(true);
@@ -142,8 +164,12 @@ public class Signup extends JFrame implements ActionListener {
             try{
                 database c = new database();
                 String query = null;
-                query = "insert into Signup value('"+smeter+"','"+susername+"','"+sname+"','"+spassword+"','"+sloginAs+"')";
+                if(loginAsCho.equals("Admin")) {
+                    query = "insert into Signup value('" + smeter + "','" + susername + "','" + sname + "','" + spassword + "','" + sloginAs + "')";
+                }else {
+                    query = "update Signup set username = '"+susername+"', password = '"+spassword+"', userType = '"+sloginAs+"' where meter_no = '"+smeter+"' ";
 
+                }
                 c.statement.execute(query);
 
                 JOptionPane.showMessageDialog(null,"Account Created");
