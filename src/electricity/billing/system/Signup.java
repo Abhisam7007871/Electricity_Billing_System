@@ -1,6 +1,5 @@
 package electricity.billing.system;
 
-import com.mysql.cj.log.Log;
 
 import javax.swing.*;
 import java.awt.*;
@@ -165,7 +164,7 @@ public class Signup extends JFrame implements ActionListener {
                 database c = new database();
                 String query = null;
                 if(loginAsCho.equals("Admin")) {
-                    query = "insert into Signup value('" + smeter + "','" + susername + "','" + sname + "','" + spassword + "','" + sloginAs + "')";
+                    query = "insert into Signup value('" + smeter + "', '" + susername + "', '" + sname + "','" + spassword + "','" + sloginAs + "')";
                 }else {
                     query = "update Signup set username = '"+susername+"', password = '"+spassword+"', userType = '"+sloginAs+"' where meter_no = '"+smeter+"' ";
 
@@ -187,7 +186,12 @@ public class Signup extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        ;
+
+
+
+
         new Signup();
     }
 }
+
+

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Deposit Details&#10; Class,Filter feature Completed]">
+    <list default="true" id="32ac97ba-9c31-4679-b151-8e0ccc54a816" name="Changes" comment="FEATURE ADDED[ Signup Page feature added ]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/electricity/billing/system/Signup.java" afterDir="false" />
     </list>
@@ -393,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710955369145</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="FEATURE ADDED[ Signup Page feature added ]">
+      <created>1710957111166</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1710957111167</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +437,8 @@
     <MESSAGE value="FEATURE ADDED[ CustomerDetails&#10; Filter feature Completed]" />
     <MESSAGE value="FEATURE ADDED[ Deposit Details&#10; Class,Filter feature Added]" />
     <MESSAGE value="FEATURE ADDED[ Deposit Details&#10; Class,Filter feature Completed]" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ Deposit Details&#10; Class,Filter feature Completed]" />
+    <MESSAGE value="FEATURE ADDED[ Signup Page feature added ]" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE ADDED[ Signup Page feature added ]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
